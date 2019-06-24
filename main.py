@@ -17,4 +17,7 @@ message = ""
 # so long as user input does not equal 'quit'
 while message != 'quit':
     message = input(prompt)
-    print(message)
+
+    # stop program from printing 'quit' as if it were a message
+    if message != 'quit':
+        print(message)
